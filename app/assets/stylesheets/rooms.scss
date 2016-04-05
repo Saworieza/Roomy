@@ -1,0 +1,41 @@
+// Place all the styles related to the Rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.room{
+    margin:0 auto;
+    height:220px;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    border-bottom: thin solid #000;
+    border-top: thin solid #000;
+}
+.room > .col-lg-3{
+    padding-left: 0;
+}
+.room-img{
+    width:250;
+    height:200px;
+    margin-top:-30px;
+}
+.room-img img{
+    width:250px;
+    height:180px;
+}
+.room-detail{
+    margin-top:-50px;
+}
+.room-detail > ul{
+    margin-left: -20px;
+}
+.room-amenities{
+    border-top: thin solid rgb(0, 0, 0);
+    padding-top:1rem;
+}
+
+.room-amenities > ul > li{
+    display:inline;
+   /* list-style-type:none;*/
+}
+.pricing > h1 > span{
+    font-size: 16px;
+}

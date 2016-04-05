@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'New Room', new_room_path %>
+<h1>Our Rooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>image</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Size</th>
+      <th>Beds</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rooms.each do |room| %>
+      <tr>
+        <td><%= link_to (image_tag room.image.url(:medium)), room %></td>
+        <td><%= link_to room.name, room %></td>
+        <td><%= truncate(room.description, :length => 60) %></td>
+        <td><%= room.price %></td>
+        <td><%= room.size %></td>
+        <td><%= room.beds %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="row">
+  <div class="room">
+    <div class="col-lg-3">
+      <div class="room-img">
+        <img src="https://www.amoils.com/health-blog/wp-content/uploads/2015/01/blog-image-bedding-dollar-paid.jpg">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="room-detail">
+        <h2 class="room-title">Junior Suite</h2>
+        <p class="room-description">
+          Our Junior Suites offer breathtaking views of the city skyline.
+        </p>
+        <ul class="room-size-bee">
+          <li> Size: 280 sq ft </li>
+          <li> Beds: 1 King(s) </li>
+        </ul>
+        <div class="room-amenities">
+          <ul>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+            <li><a href=""><i class="">a</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+       <div class="pricing text-center">
+         <h1><span>From</span><br>$350</h1>
+         <a class="btn btn-default" href="/">
+           More Info
+         </a>
+       </div>
+    </div>
+  </div>
+</div>

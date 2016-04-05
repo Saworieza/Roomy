@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  price: 1
+  size: MyString
+  checkin: 2016-04-05
+  checkout: 2016-04-05
+  adults: 1
+  kids: 1
+  size: 1
+  beds: MyString
+  accomodates: MyString
+
+two:
+  name: MyString
+  description: MyText
+  price: 1
+  size: MyString
+  checkin: 2016-04-05
+  checkout: 2016-04-05
+  adults: 1
+  kids: 1
+  size: 1
+  beds: MyString
+  accomodates: MyString
